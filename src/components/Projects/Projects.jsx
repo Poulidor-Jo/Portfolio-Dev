@@ -2,6 +2,9 @@ import './Projects.scss'
 import sophieBluelImage from '../../assets/images/SOPHIE-BLUEL.png'
 import kasaImage from '../../assets/images/Kasa.png'
 import grimoireImage from '../../assets/images/Mon-Vieux-Grimoire.webp'
+import bookiImage from '../../assets/images/Booki.png'
+import ninaImage from '../../assets/images/Nina_carducci.png'
+import projectPlaceholder from '../../assets/images/project-placeholder.jpg'
 
 function Projects() {
   const projects = [
@@ -25,6 +28,27 @@ function Projects() {
       image: grimoireImage,
       description: "Site de notation de livres avec backend Node.js/Express et MongoDB. API REST sécurisée, authentification JWT et gestion des fichiers.",
       github: "https://github.com/Poulidor-Jo/Mon-Vieux-Grimoire"
+    },
+    {
+      id: 4,
+      title: "Booki",
+      image: bookiImage,
+      description: "Site de réservation d'hébergements et d'activités. Interface responsive développée en HTML5 et CSS3, respectant la maquette Figma et les bonnes pratiques.",
+      github: "https://github.com/Poulidor-Jo/Booki"
+    },
+    {
+      id: 5,
+      title: "Nina Carducci",
+      image: ninaImage,
+      description: "Optimisation SEO et performance d'un site de photographe. Amélioration du référencement, de l'accessibilité et des performances techniques.",
+      github: "https://github.com/Poulidor-Jo/Nina-carducci"
+    },
+    {
+      id: 6,
+      title: "Qwenta",
+      image: projectPlaceholder,
+      description: "Planification et documentation technique d'un projet de menu maker. Mise en place d'une méthodologie agile et création de spécifications techniques.",
+      github: "https://github.com/Poulidor-Jo/Qwenta"
     }
   ]
 

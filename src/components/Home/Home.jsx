@@ -1,11 +1,34 @@
+// Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// Imports des icônes de marques
 import { 
-  faJs, faHtml5, faCss3Alt, faSass, faReact, 
-  faBootstrap, faNodeJs, faGithub, faGitAlt, faFigma 
+  faBootstrap,
+  faCss3Alt,
+  faFigma,
+  faGit,
+  faGithub,
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faReact,
+  faSass,
 } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faServer } from '@fortawesome/free-solid-svg-icons'
-import './Home.scss'
+
+// Imports des icônes solides
+import { 
+  faBolt,
+  faCode,
+  faDatabase,
+  faListCheck,
+  faServer,
+} from '@fortawesome/free-solid-svg-icons'
+
+// Import des assets
 import profileImage from '../../assets/images/BFE76322-2A14-4C71-8CBE-39C6FD800BB0.jpeg'
+
+// Import des styles
+import './Home.scss'
 
 function Home() {
   const skills = {
@@ -16,19 +39,19 @@ function Home() {
       { name: 'Sass', icon: faSass },
       { name: 'React', icon: faReact },
       { name: 'Bootstrap', icon: faBootstrap },
-      { name: 'Vite', icon: faCode },
+      { name: 'Vite', icon: faBolt },
       { name: 'VS Code', icon: faCode }
     ],
     backend: [
       { name: 'Node', icon: faNodeJs },
       { name: 'Express', icon: faServer },
-      { name: 'MongoDB', icon: faServer }
+      { name: 'MongoDB', icon: faDatabase }
     ],
     tools: [
-      { name: 'Git', icon: faGitAlt },
+      { name: 'Git', icon: faGit },
       { name: 'GitHub', icon: faGithub },
       { name: 'Figma', icon: faFigma },
-      { name: 'Trello', icon: faCode }
+      { name: 'Trello', icon: faListCheck }
     ]
   }
 
