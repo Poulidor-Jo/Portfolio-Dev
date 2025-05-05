@@ -28,17 +28,22 @@
 
     &:hover {
       transform: translateY(-5px);
+
+      .project-card__image img {
+        transform: scale(1.05);
+      }
     }
 
     &__image {
       width: 100%;
-      height: 200px;
+      height: 250px; // Augmentation de la hauteur pour mieux voir les projets
       overflow: hidden;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.3s ease;
       }
     }
 

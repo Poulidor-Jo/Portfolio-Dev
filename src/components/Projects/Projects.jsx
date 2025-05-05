@@ -1,26 +1,28 @@
 import './Projects.scss'
-import projectPlaceholder from '../../assets/images/project-placeholder.jpg'
+import sophieBluelImage from '../../assets/images/SOPHIE-BLUEL.png'
+import kasaImage from '../../assets/images/Kasa.png'
+import grimoireImage from '../../assets/images/Mon-Vieux-Grimoire.webp'
 
 function Projects() {
   const projects = [
     {
       id: 1,
       title: "Sophie Bluel",
-      image: projectPlaceholder,
+      image: sophieBluelImage,
       description: "Portfolio d'architecte d'intérieur avec interface d'administration. Développement front-end en JavaScript vanilla avec gestion authentification et manipulation du DOM.",
       github: "https://github.com/Poulidor-Jo/Sophie-Bluel"
     },
     {
       id: 2,
       title: "Kasa",
-      image: projectPlaceholder,
+      image: kasaImage,
       description: "Application de location immobilière développée en React. Mise en place de composants réutilisables, routing avec React Router et animations CSS.",
       github: "https://github.com/Poulidor-Jo/Kasa"
     },
     {
       id: 3,
       title: "Mon Vieux Grimoire",
-      image: projectPlaceholder,
+      image: grimoireImage,
       description: "Site de notation de livres avec backend Node.js/Express et MongoDB. API REST sécurisée, authentification JWT et gestion des fichiers.",
       github: "https://github.com/Poulidor-Jo/Mon-Vieux-Grimoire"
     }
