@@ -5,9 +5,9 @@ function Skills() {
     {
       title: "Développement Frontend",
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "HTML/CSS", level: 85 },
+        { name: "React", level: 80 },
+        { name: "JavaScript", level: 80 },
+        { name: "HTML/CSS", level: 80 },
         { name: "Sass", level: 80 },
         { name: "Responsive Design", level: 85 }
       ]
@@ -24,7 +24,7 @@ function Skills() {
     {
       title: "Outils & Méthodes",
       skills: [
-        { name: "Git", level: 85 },
+        { name: "Git", level: 80 },
         { name: "VS Code", level: 90 },
         { name: "Figma", level: 70 },
         { name: "Méthodes Agiles", level: 75 }

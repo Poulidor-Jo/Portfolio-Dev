@@ -15,7 +15,7 @@ function About() {
           <section className="about__section">
             <h2>Qui suis-je ?</h2>
             <p>
-              Passionné par le développement web, je crée des applications modernes
+              Passionné par le développement web, je créer des applications modernes
               et intuitives. Mon parcours m'a permis d'acquérir une expertise solide
               en développement frontend et backend.
             </p>

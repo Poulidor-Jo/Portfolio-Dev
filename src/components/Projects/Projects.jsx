@@ -4,7 +4,7 @@ import kasaImage from '../../assets/images/Kasa.png'
 import grimoireImage from '../../assets/images/Mon-Vieux-Grimoire.webp'
 import bookiImage from '../../assets/images/Booki.png'
 import ninaImage from '../../assets/images/Nina_carducci.png'
-import projectPlaceholder from '../../assets/images/project-placeholder.jpg'
+import qwentaImage from '../../assets/images/Qwenta.png'
 
 function Projects() {
   const projects = [
@@ -12,7 +12,7 @@ function Projects() {
       id: 1,
       title: "Sophie Bluel",
       image: sophieBluelImage,
-      description: "Portfolio d'architecte d'intérieur avec interface d'administration. Développement front-end en JavaScript vanilla avec gestion authentification et manipulation du DOM.",
+      description: "Portfolio d'architecte d'intérieur avec interface d'administration. Développement front-end en JavaScript  avec gestion authentification et manipulation du DOM.",
       github: "https://github.com/Poulidor-Jo/Sophie-Bluel"
     },
     {
@@ -46,7 +46,7 @@ function Projects() {
     {
       id: 6,
       title: "Qwenta",
-      image: projectPlaceholder,
+      image: qwentaImage,
       description: "Planification et documentation technique d'un projet de menu maker. Mise en place d'une méthodologie agile et création de spécifications techniques.",
       github: "https://github.com/Poulidor-Jo/Qwenta"
     }
