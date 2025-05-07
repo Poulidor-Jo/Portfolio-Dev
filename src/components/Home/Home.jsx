@@ -1,5 +1,6 @@
 // Import des assets
 import profileImage from '../../assets/images/BFE76322-2A14-4C71-8CBE-39C6FD800BB0.jpeg'
+import ParticlesBackground from './ParticlesBackground'
 
 // Import des styles
 import './Home.scss'
@@ -7,6 +8,7 @@ import './Home.scss'
 function Home() {
   return (
     <div className="home">
+      <ParticlesBackground />
       <section className="about-card">
         <div className="about-card__image">
           <img src={profileImage} alt="Mon portrait" />

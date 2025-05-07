@@ -2,15 +2,32 @@
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
 
-  .nav {
+  &__container {
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
     padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; // Hauteur fixe pour le header
+  }
+
+  &__logo {
+    height: 100%;
+    
+    
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+    
 
     .nav-link {
       text-decoration: none;
@@ -28,6 +45,34 @@
         color: #007bff;
         background-color: #e6f3ff;
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      height: auto;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    &__logo {
+      height: 60px;
+      padding: 0;
+      margin-right: 0;
+
+      img {
+        height: 32px;
+      }
+    }
+
+    .nav {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0;
     }
   }
 }
