@@ -10,7 +10,7 @@ import './styles/App.scss'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className="app">
         <Header />
         <main className="main-content">
