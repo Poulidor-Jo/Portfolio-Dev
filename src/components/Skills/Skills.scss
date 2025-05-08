@@ -1,68 +1,50 @@
+@import '../../styles/variables';
+
 .skills {
   width: 100%;
-  padding: 2rem;
+  padding: $spacing-lg;
 
   h1 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #333;
+    @include heading-primary;
   }
 
   .skills-container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    @include section-container;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: $spacing-lg;
   }
 
   .skills-category {
-    background: #fff;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    @include card-base;
+    padding: $spacing-lg;
 
     h2 {
-      margin-bottom: 2rem;
+      margin-bottom: $spacing-lg;
       text-align: center;
-      color: #333;
+      color: $text-primary;
     }
 
     .skills-logos {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      gap: 1.5rem;
+      gap: $spacing-md;
     }
 
     .skill-item {
+      @include card-base;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
-      background: #f8f9fa;
-      padding: 1rem;
-      border-radius: 8px;
+      gap: $spacing-xs;
+      background: $background-light;
+      padding: $spacing-sm;
       text-align: center;
-      transition: transform 0.2s;
       min-width: 120px;
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        .skill-icon {
-          transform: scale(1.1);
-        }
-
-        .skill-progress__fill {
-          background-color: #0056b3;
-        }
-      }
 
       .skill-icon {
         font-size: 2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: $spacing-xs;
         transition: all 0.3s ease;
         color: #4a5568;
 
@@ -130,8 +112,8 @@
       .skill-name {
         font-size: 0.85rem;
         font-weight: 500;
-        color: #333;
-        margin-bottom: 0.5rem;
+        color: $text-primary;
+        margin-bottom: $spacing-xs;
       }
 
       .skill-progress {
@@ -150,29 +132,29 @@
 
         &__fill {
           height: 100%;
-          background-color: #007bff;
+          background-color: $primary-color;
           border-radius: 3px;
           transition: width 0.6s ease, background-color 0.3s ease;
         }
 
         &__percentage {
           font-size: 0.75rem;
-          color: #666;
+          color: $text-secondary;
         }
       }
     }
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $breakpoint-tablet) {
   .skills .skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-mobile) {
   .skills {
-    padding: 1rem;
+    padding: $spacing-sm;
     
     .skills-container {
       grid-template-columns: 1fr;

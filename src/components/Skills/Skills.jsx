@@ -31,7 +31,7 @@ function Skills() {
       { name: 'React', icon: faReact, level: 70 },
       { name: 'Bootstrap', icon: faBootstrap, level: 75 },
       { name: 'Vite', icon: faBolt, level: 65 },
-      { name: 'VS Code', icon: faCode, level: 90 }
+      { name: 'VS Code', icon: faCode, level: 75 }
     ],
     backend: [
       { name: 'Node', icon: faNodeJs, level: 70 },

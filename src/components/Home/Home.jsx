@@ -52,6 +52,57 @@ function Home() {
             </p>
           </div>
         </section>
+
+        <section className="career-path">
+          <h2>Mon Parcours</h2>
+          <div className="timeline">
+            <div className="timeline-item left">
+              <div className="timeline-bubble">
+                <div className="timeline-content">
+                  <h3>Apprenti</h3>
+                  <p className="company">Mr.Bricolage Ceret</p>
+                  <p className="period">Septembre 2014 - Septembre 2017</p>
+                  <p className="location">Céret, Occitanie</p>
+                  <div className="skills">
+                    <span className="skill-tag">Formation terrain</span>
+                    <span className="skill-tag">Formation pratique</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item right">
+              <div className="timeline-bubble">
+                <div className="timeline-content">
+                  <h3>Gestionnaire rayons Plomberie-Chauffage</h3>
+                  <p className="company">Mr.Bricolage Ceret</p>
+                  <p className="period">Décembre 2019 - Mars 2024</p>
+                  <p className="location">Céret, Occitanie</p>
+                  <div className="skills">
+                    <span className="skill-tag">Commerce de détail</span>
+                    <span className="skill-tag">Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item left">
+              <div className="timeline-bubble">
+                <div className="timeline-content">
+                  <h3>Formation Développeur Web</h3>
+                  <p className="company">OpenClassrooms</p>
+                  <p className="period">Novembre 2023 - Mai 2024</p>
+                  <p className="location">Formation en ligne</p>
+                  <div className="skills">
+                    <span className="skill-tag">Développement Web</span>
+                    <span className="skill-tag">React</span>
+                    <span className="skill-tag">Node.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )

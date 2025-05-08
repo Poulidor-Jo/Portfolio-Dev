@@ -101,6 +101,122 @@
       line-height: 1.6;
     }
   }
+
+  .career-path {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0;
+    margin-top: 2rem;
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: rgba(0, 123, 255, 0.3);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 3px;
+      }
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      margin-bottom: 3rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: #007bff;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      &.left {
+        left: 0;
+        &::after {
+          right: -12.5px;
+        }
+      }
+
+      &.right {
+        left: 50%;
+        &::after {
+          left: -12.5px;
+        }
+      }
+    }
+
+    .timeline-bubble {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .timeline-content {
+      h3 {
+        color: #333;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+      }
+
+      .company {
+        color: #007bff;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      .period, .location {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .skills {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .skill-tag {
+          background-color: rgba(0, 123, 255, 0.1);
+          color: #007bff;
+          padding: 0.3rem 0.8rem;
+          border-radius: 15px;
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -130,6 +246,28 @@
 
     .about-sections {
       grid-template-columns: 1fr;
+    }
+
+    .career-path {
+      .timeline {
+        &::after {
+          left: 31px;
+        }
+
+        .timeline-item {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+
+          &.left, &.right {
+            left: 0;
+          }
+
+          &::after {
+            left: 18px;
+          }
+        }
+      }
     }
   }
 }
