@@ -42,6 +42,36 @@
         font-size: 1.5rem;
         color: $primary-color;
       }
+
+      .phone-reveal-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        color: $text-secondary;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+
+        .phone-link {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+      .phone-link {
+        color: $text-secondary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
     }
   }
 

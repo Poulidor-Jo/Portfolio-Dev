@@ -17,9 +17,11 @@ function Home() {
           <div className="hero-section__content">
             <h1>Bienvenue sur mon portfolio</h1>
             <p>
-              Développeur web passionné, je crée des applications web modernes et 
-              performantes. Spécialisé en React et Node.js, je mets mes compétences
-              au service de projets innovants.
+              Je me présente, je m'appelle Jordan Moret, j'ai 28 ans et je suis 
+              Développeur Web. Passionné par les nouvelles technologies, j'aime créer 
+              des applications web modernes et intuitives. Mon expertise en React et 
+              Node.js me permet de développer des solutions performantes et innovantes 
+              pour répondre aux besoins spécifiques de chaque projet.
             </p>
           </div>
         </section>
@@ -28,7 +30,7 @@ function Home() {
           <div className="about-section">
             <h2>Qui suis-je ?</h2>
             <p>
-              Passionné par le développement web, je créer des applications modernes
+              Passionné par le développement web, je crée des applications modernes
               et intuitives. Mon parcours m'a permis d'acquérir une expertise solide
               en développement frontend et backend.
             </p>
@@ -59,13 +61,23 @@ function Home() {
             <div className="timeline-item left">
               <div className="timeline-bubble">
                 <div className="timeline-content">
-                  <h3>Apprenti</h3>
+                  <h3>Apprenti Vendeur</h3>
                   <p className="company">Mr.Bricolage Ceret</p>
                   <p className="period">Septembre 2014 - Septembre 2017</p>
                   <p className="location">Céret, Occitanie</p>
+                  <p className="description">
+                    Durant mon apprentissage, j'ai développé une solide base de connaissances
+                    techniques dans le domaine du bricolage et de la quincaillerie. Cette 
+                    expérience m'a permis d'acquérir des compétences essentielles en gestion 
+                    de stocks, conseil client et travail d'équipe. J'ai appris à être méthodique,
+                    à résoudre des problèmes techniques et à m'adapter aux besoins spécifiques
+                    de chaque client.
+                  </p>
                   <div className="skills">
-                    <span className="skill-tag">Formation terrain</span>
-                    <span className="skill-tag">Formation pratique</span>
+                    <span className="skill-tag">Service client</span>
+                    <span className="skill-tag">Gestion des stocks</span>
+                    <span className="skill-tag">Conseil technique</span>
+                    <span className="skill-tag">Travail d'équipe</span>
                   </div>
                 </div>
               </div>
@@ -78,9 +90,21 @@ function Home() {
                   <p className="company">Mr.Bricolage Ceret</p>
                   <p className="period">Décembre 2019 - Mars 2024</p>
                   <p className="location">Céret, Occitanie</p>
+                  <p className="description">
+                    En tant que gestionnaire de rayons, j'ai développé des compétences
+                    avancées en gestion commerciale et management. J'étais responsable de
+                    l'optimisation des stocks, de la négociation avec les fournisseurs,
+                    et de la formation des nouveaux collaborateurs. Cette expérience m'a 
+                    permis de développer un esprit analytique, des capacités de planification
+                    et une expertise technique pointue dans le domaine de la plomberie et
+                    du chauffage.
+                  </p>
                   <div className="skills">
-                    <span className="skill-tag">Commerce de détail</span>
-                    <span className="skill-tag">Management</span>
+                    <span className="skill-tag">Management d'équipe</span>
+                    <span className="skill-tag">Gestion commerciale</span>
+                    <span className="skill-tag">Négociation</span>
+                    <span className="skill-tag">Planification</span>
+                    <span className="skill-tag">Formation</span>
                   </div>
                 </div>
               </div>
@@ -93,10 +117,21 @@ function Home() {
                   <p className="company">OpenClassrooms</p>
                   <p className="period">Novembre 2023 - Mai 2024</p>
                   <p className="location">Formation en ligne</p>
+                  <p className="description">
+                    Cette formation intensive m'a permis d'acquérir une expertise complète
+                    en développement web moderne. À travers 6 projets professionnels, j'ai
+                    maîtrisé les technologies frontend et backend essentielles. J'ai appris
+                    à concevoir des applications web performantes, à gérer des API RESTful,
+                    et à implémenter des fonctionnalités complexes tout en suivant les
+                    meilleures pratiques du développement web.
+                  </p>
                   <div className="skills">
-                    <span className="skill-tag">Développement Web</span>
-                    <span className="skill-tag">React</span>
-                    <span className="skill-tag">Node.js</span>
+                    <span className="skill-tag">React/Node.js</span>
+                    <span className="skill-tag">JavaScript/HTML/CSS</span>
+                    <span className="skill-tag">API REST</span>
+                    <span className="skill-tag">Git/GitHub</span>
+                    <span className="skill-tag">Méthodes Agiles</span>
+                    <span className="skill-tag">MongoDB</span>
                   </div>
                 </div>
               </div>

@@ -25,6 +25,8 @@ function Contact() {
     message: false
   })
 
+  const [showPhone, setShowPhone] = useState(false);
+
   // Expressions régulières pour la validation
   const validations = {
     name: {
@@ -139,7 +141,16 @@ function Contact() {
           <div className="contact__info-items">
             <div className="contact__info-item">
               <FontAwesomeIcon icon={faPhone} />
-              <p>Sur demande</p>
+              <button 
+                className="phone-reveal-btn"
+                onClick={() => setShowPhone(!showPhone)}
+              >
+                {showPhone ? (
+                  <a href="tel:0788231505" className="phone-link">07 88 23 15 05</a>
+                ) : (
+                  "Mon numéro de téléphone"
+                )}
+              </button>
             </div>
             <div className="contact__info-item">
               <FontAwesomeIcon icon={faLocationDot} />
