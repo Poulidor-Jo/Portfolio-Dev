@@ -19,8 +19,8 @@ function Home() {
             <p>
               Je me présente, je m'appelle Jordan Moret, j'ai 28 ans et je suis 
               Développeur Web. Passionné par les nouvelles technologies, j'aime créer 
-              des applications web modernes et intuitives. Mon expertise en React et 
-              Node.js me permet de développer des solutions performantes et innovantes 
+              des applications web modernes et intuitives. Mon expertise en tant que developpeur 
+               me permet de développer des solutions performantes et innovantes 
               pour répondre aux besoins spécifiques de chaque projet.
             </p>
           </div>

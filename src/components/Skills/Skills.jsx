@@ -30,8 +30,7 @@ function Skills() {
       { name: 'Sass', icon: faSass, level: 70 },
       { name: 'React', icon: faReact, level: 70 },
       { name: 'Bootstrap', icon: faBootstrap, level: 75 },
-      { name: 'Vite', icon: faBolt, level: 65 },
-      { name: 'VS Code', icon: faCode, level: 75 }
+      { name: 'Vite', icon: faBolt, level: 65 }
     ],
     backend: [
       { name: 'Node', icon: faNodeJs, level: 70 },
@@ -42,7 +41,8 @@ function Skills() {
       { name: 'Git', icon: faGit, level: 80 },
       { name: 'GitHub', icon: faGithub, level: 80 },
       { name: 'Figma', icon: faFigma, level: 70 },
-      { name: 'Trello', icon: faListCheck, level: 75 }
+      { name: 'Trello', icon: faListCheck, level: 75 },
+      { name: 'VS Code', icon: faCode, level: 75 }
     ]
   }
 
