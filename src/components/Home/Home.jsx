@@ -115,7 +115,7 @@ function Home() {
                 <div className="timeline-content">
                   <h3>Formation Développeur Web</h3>
                   <p className="company">OpenClassrooms</p>
-                  <p className="period">Novembre 2023 - Mai 2024</p>
+                  <p className="period">Novembre 2024 - Mai 2025</p>
                   <p className="location">Formation en ligne</p>
                   <p className="description">
                     Cette formation intensive m'a permis d'acquérir une expertise complète
