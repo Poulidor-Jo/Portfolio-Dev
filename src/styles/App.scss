@@ -74,6 +74,21 @@ button {
   }
 }
 
+// Styles d'accessibilité pour le focus
+*:focus {
+  outline: 3px solid $primary-color;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 3px solid $primary-color;
+  outline-offset: 2px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;

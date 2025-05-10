@@ -47,21 +47,34 @@ function Skills() {
   }
 
   return (
-    <div className="skills">
+    <div className="skills" role="main">
       <h1>Mes Compétences</h1>
       <div className="skills-container">
-        <div className="skills-category">
-          <h2>Frontend</h2>
-          <div className="skills-logos">
+        <section className="skills-category" aria-labelledby="frontend-title">
+          <h2 id="frontend-title">Frontend</h2>
+          <div className="skills-logos" role="list">
             {skills.frontend.map(skill => (
-              <div key={skill.name} className="skill-item">
+              <div 
+                key={skill.name} 
+                className="skill-item"
+                role="listitem"
+                tabIndex="0"
+                aria-label={`${skill.name}: ${skill.level}% de maîtrise`}
+              >
                 <FontAwesomeIcon 
                   icon={skill.icon} 
                   className="skill-icon"
                   data-icon={skill.name.toLowerCase()}
+                  aria-hidden="true"
                 />
                 <span className="skill-name">{skill.name}</span>
-                <div className="skill-progress">
+                <div 
+                  className="skill-progress"
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
                   <div className="skill-progress__bar">
                     <div 
                       className="skill-progress__fill"
@@ -73,20 +86,33 @@ function Skills() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="skills-category">
-          <h2>Backend</h2>
-          <div className="skills-logos">
+        <section className="skills-category" aria-labelledby="backend-title">
+          <h2 id="backend-title">Backend</h2>
+          <div className="skills-logos" role="list">
             {skills.backend.map(skill => (
-              <div key={skill.name} className="skill-item">
+              <div 
+                key={skill.name} 
+                className="skill-item"
+                role="listitem"
+                tabIndex="0"
+                aria-label={`${skill.name}: ${skill.level}% de maîtrise`}
+              >
                 <FontAwesomeIcon 
                   icon={skill.icon} 
                   className="skill-icon"
                   data-icon={skill.name.toLowerCase()}
+                  aria-hidden="true"
                 />
                 <span className="skill-name">{skill.name}</span>
-                <div className="skill-progress">
+                <div 
+                  className="skill-progress"
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
                   <div className="skill-progress__bar">
                     <div 
                       className="skill-progress__fill"
@@ -98,20 +124,33 @@ function Skills() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        <div className="skills-category">
-          <h2>Outils</h2>
-          <div className="skills-logos">
+        <section className="skills-category" aria-labelledby="tools-title">
+          <h2 id="tools-title">Outils</h2>
+          <div className="skills-logos" role="list">
             {skills.tools.map(skill => (
-              <div key={skill.name} className="skill-item">
+              <div 
+                key={skill.name} 
+                className="skill-item"
+                role="listitem"
+                tabIndex="0"
+                aria-label={`${skill.name}: ${skill.level}% de maîtrise`}
+              >
                 <FontAwesomeIcon 
                   icon={skill.icon} 
                   className="skill-icon"
                   data-icon={skill.name.toLowerCase()}
+                  aria-hidden="true"
                 />
                 <span className="skill-name">{skill.name}</span>
-                <div className="skill-progress">
+                <div 
+                  className="skill-progress"
+                  role="progressbar"
+                  aria-valuenow={skill.level}
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
                   <div className="skill-progress__bar">
                     <div 
                       className="skill-progress__fill"
@@ -123,7 +162,7 @@ function Skills() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     </div>
   )

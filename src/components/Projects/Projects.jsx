@@ -98,22 +98,34 @@ function Projects() {
   ]
 
   return (
-    <div className="projects">
+    <div className="projects" role="main">
       <h1>Mes Projets</h1>
-      <div className="projects-grid">
+      <div className="projects-grid" role="list">
         {projects.map(project => (
           <article 
             key={project.id} 
             className="project-card"
             onClick={() => setSelectedProject(project)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setSelectedProject(project);
+              }
+            }}
+            tabIndex="0"
+            role="listitem"
+            aria-label={`Projet ${project.title}`}
           >
             <div className="project-card__image">
-              <img src={project.image} alt={project.title} />
+              <img src={project.image} alt={`Aperçu du projet ${project.title}`} />
             </div>
             <div className="project-card__content">
               <h2>{project.title}</h2>
               <p>{project.description}</p>
-              <button className="project-card__details-btn">
+              <button 
+                className="project-card__details-btn"
+                aria-expanded={selectedProject?.id === project.id}
+              >
                 Voir les détails
               </button>
             </div>
@@ -122,17 +134,27 @@ function Projects() {
       </div>
 
       {selectedProject && (
-        <div className="project-modal" onClick={() => setSelectedProject(null)}>
-          <div className="project-modal__content" onClick={e => e.stopPropagation()}>
+        <div 
+          className="project-modal" 
+          onClick={() => setSelectedProject(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={`modal-title-${selectedProject.id}`}
+        >
+          <div 
+            className="project-modal__content" 
+            onClick={e => e.stopPropagation()}
+          >
             <button 
               className="project-modal__close"
               onClick={() => setSelectedProject(null)}
+              aria-label="Fermer la fenêtre modale"
             >
               ×
             </button>
             <div className="project-modal__header">
-              <img src={selectedProject.image} alt={selectedProject.title} />
-              <h2>{selectedProject.title}</h2>
+              <img src={selectedProject.image} alt={`Capture d'écran détaillée du projet ${selectedProject.title}`} />
+              <h2 id={`modal-title-${selectedProject.id}`}>{selectedProject.title}</h2>
             </div>
             <div className="project-modal__body">
               <div className="project-modal__description">
