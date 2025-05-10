@@ -154,7 +154,14 @@ function Contact() {
             </div>
             <div className="contact__info-item">
               <FontAwesomeIcon icon={faLocationDot} />
-              <p>Le Boulou, France</p>
+              <a 
+                href="https://www.google.com/maps?q=Le+Boulou,+France" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="location-link"
+              >
+                Le Boulou, France
+              </a>
             </div>
           </div>
         </div>

@@ -72,6 +72,16 @@
           color: $primary-color;
         }
       }
+
+      .location-link {
+        color: $text-secondary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
     }
   }
 
