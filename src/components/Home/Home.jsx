@@ -1,6 +1,8 @@
 // Import des assets
 import profileImage from '../../assets/images/BFE76322-2A14-4C71-8CBE-39C6FD800BB0.jpeg'
 import ParticlesBackground from './ParticlesBackground'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 // Import des styles
 import './Home.scss'
@@ -138,6 +140,17 @@ function Home() {
             </div>
           </div>
         </section>
+
+        <div className="cv-download">
+          <a 
+            href="/src/assets/documents/Cv_Moret_Jordan.pdf" 
+            download="Cv_Moret_Jordan.pdf"
+            className="download-btn"
+          >
+            <FontAwesomeIcon icon={faDownload} />
+            Télécharger mon CV ici !
+          </a>
+        </div>
       </div>
     </div>
   )
