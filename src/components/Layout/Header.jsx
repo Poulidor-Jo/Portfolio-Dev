@@ -18,9 +18,8 @@ function Header() {
     <header className="header" role="banner">
       <div className="header__container">
         <div className="header__logo">
-          <a href="/" aria-label="Retour à l'accueil">
-            <img src={logo} alt="Logo de Jordan Moret - Développeur Web" />
-          </a>
+          {/* Suppression du lien redondant sur le logo */}
+          <img src={logo} alt="Logo de Jordan Moret - Développeur Web" />
         </div>
         
         <button 

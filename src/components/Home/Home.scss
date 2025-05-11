@@ -207,7 +207,6 @@
         font-size: 0.95rem;
         line-height: 1.6;
         margin: 1rem 0;
-        text-align: justify;
       }
 
       .skills {
@@ -235,10 +234,6 @@
 
     @media (max-width: $breakpoint-mobile) {
       .timeline-content {
-        .description {
-          text-align: left;
-        }
-        
         .skills {
           justify-content: center;
         }
@@ -280,6 +275,16 @@
       svg {
         font-size: 1.5rem;
       }
+
+      .pdf-icon {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .pdf-info {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   }
 }

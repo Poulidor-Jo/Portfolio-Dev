@@ -2,7 +2,7 @@
 import profileImage from '../../assets/images/BFE76322-2A14-4C71-8CBE-39C6FD800BB0.jpeg'
 import ParticlesBackground from './ParticlesBackground'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 
 // Import des styles
 import './Home.scss'
@@ -146,10 +146,15 @@ function Home() {
             href="/Cv_Moret_Jordan.pdf" 
             download="Cv_Moret_Jordan.pdf"
             className="download-btn"
+            aria-label="Télécharger mon CV au format PDF (s'ouvre dans une nouvelle fenêtre)"
           >
-            <FontAwesomeIcon icon={faDownload} />
-            Télécharger mon CV ici !
+            <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
+            <FontAwesomeIcon icon={faFilePdf} aria-hidden="true" className="pdf-icon" />
+            Télécharger mon CV (format PDF)
           </a>
+          <p className="pdf-info">
+            Le document s'ouvrira dans votre lecteur PDF par défaut
+          </p>
         </div>
       </div>
     </div>
