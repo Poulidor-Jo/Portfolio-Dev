@@ -143,7 +143,7 @@ function Home() {
 
         <div className="cv-download">
           <a 
-            href="/src/assets/documents/Cv_Moret_Jordan.pdf" 
+            href="/Cv_Moret_Jordan.pdf" 
             download="Cv_Moret_Jordan.pdf"
             className="download-btn"
           >
