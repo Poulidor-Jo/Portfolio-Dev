@@ -265,16 +265,16 @@
       display: inline-flex;
       align-items: center;
       gap: 1rem;
-      background-color: #007bff;
-      color: white;
+      background-color: #0056b3; // Couleur plus foncée pour un meilleur contraste
+      color: #ffffff; // Blanc pur pour un meilleur contraste
       padding: 1rem 2rem;
       border-radius: 8px;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600; // Police plus grasse pour améliorer la lisibilité
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: #003d80; // Version encore plus foncée pour le hover
       }
 
       svg {
