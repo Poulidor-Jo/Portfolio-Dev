@@ -10,6 +10,7 @@ import {
   faNodeJs,
   faReact,
   faSass,
+
 } from '@fortawesome/free-brands-svg-icons'
 import { 
   faBolt,
